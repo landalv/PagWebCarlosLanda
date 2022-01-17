@@ -1,0 +1,284 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e0e0e0;
+  font-size:1.2rem;
+  line-height: 1.6em;
+  text-align: center;
+}
+h1{
+  line-height: 1.3em;
+  font-size: 2rem;
+}
+p{
+  margin-bottom:1.6em;
+}
+/* Header*/
+.header {
+  /*hacemos que la barra flote encima de la pagina*/
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0; /* o tambiem vale width:100%;*/
+}
+  .header a{
+    text-decoration:none;
+  }
+    .logo-nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width:100%;
+    }
+      .logo-text-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 49%;
+          margin: .5% .5%;
+          border-radius: 10px;
+          border: 1px solid grey;
+          background: lightblue;
+        }
+        .logo{
+            padding:.5% .5%;
+            width: 70px;
+            height: 70px;
+            align-items: center;
+          }
+        .title{
+            width: calc(100% - 70px);
+            height: calc(100% - 70px);
+            padding: 1rem;
+            letter-spacing: 5px;
+            font-size: 1.7rem;
+            color: black;
+          }
+      .navigation{
+          margin: .5% .5%;
+          border-radius: 10px;
+          background: lightblue;
+          border: 1px solid grey;
+        }
+        .navigation ul{
+            list-style: none;
+          }
+          .navigation ul li{
+              display: inline-block;
+            }
+            .navigation ul li a{
+                display: block;
+                padding:0.5rem 1rem;
+                transition: all 0.4s linear;
+                border-radius: 10px;
+                text-transform: uppercase;
+              }
+              .navigation ul li a:hover{
+                  background: lightyellow;
+                  color: gray;
+                }
+              .navigation .active{
+                  background: rgb(71, 16, 233);
+                  color: white;
+                }
+.header-invisible {
+  width: 100%;
+  height:50%;
+  opacity: 0;
+}
+/*CENTRAL*/
+.central {
+  overflow: hidden;
+}
+  /*SLIDER*/
+  #silder-container {
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    text-align: left;
+  }
+    #slider-box{
+      width: calc(3*100%);
+      height:100%;
+      /*transicion*/
+      -webkit-transition: all 0.75s ease;
+      -moz-transition: all 0.75s ease;
+      -ms-transition: all 0.75s ease;
+      -o-transition: all 0.75s ease;
+      transition: all 0.75s ease;
+      -moz-animation: autoSlider 20s infinite linear;
+      -webkit-animation: autoSlider 20s infinite linear;
+      animation: autoSlider 20s infinite linear;
+    }
+      @-moz-keyframes autoSlider {
+        0%{
+          margin-left:0%;
+        }
+        30%{
+          margin-left: 0%;
+        }
+        35%{
+          margin-left:-100%;
+        }
+        65%{
+          margin-left:-100%;
+        }
+        70%{
+          margin-left: -200%;
+        }
+        95%{
+          margin-left: -200%;
+        }
+        100%{
+          margin-left: 0;
+        }
+      }
+      @-webkit-keyframes autoSlider {
+        0%{
+          margin-left:0%;
+        }
+        30%{
+          margin-left: 0%;
+        }
+        35%{
+          margin-left:-100%;
+        }
+        65%{
+          margin-left:-100%;
+        }
+        70%{
+          margin-left: -200%;
+        }
+        95%{
+          margin-left: -200%;
+        }
+        100%{
+          margin-left: 0;
+        }
+      }
+      @keyframes autoSlider {
+        0%{
+          margin-left:0%;
+        }
+        30%{
+          margin-left: 0%;
+        }
+        35%{
+          margin-left:-100%;
+        }
+        65%{
+          margin-left:-100%;
+        }
+        70%{
+          margin-left: -200%;
+        }
+        95%{
+          margin-left: -200%;
+        }
+        100%{
+          margin-left: 0;
+        }
+      }
+      .slider-element {
+        float: left;
+        width: calc(100%/3);
+        height: 100%;
+      }
+        .element-3, .element-2, .element-1{
+          min-height:400px;
+          /*max-height: 100px;*/
+          width:100%;
+          height: 100%;
+          margin: 0 auto;
+          padding-left: 20%;
+          padding-right: 20%;
+          padding-top: .5%;
+          padding-bottom: .5%;
+          text-align: center;
+        }
+          .publicacion-slider {
+            width: 100%;
+            padding-top: 1%;
+            padding-left: 1%;
+            padding-right: 1%;
+            border-radius: 10px;
+            line-height: 100%;
+            background: rgba(224, 224, 224, 0.87);
+          }
+        .element-1{
+          background: url(/img/fondos/pantalla.jpg) repeat center top fixed;
+          background-size: 100%;
+        }
+        .element-2{
+          background: url(/img/fondos/web-design.jpg) repeat center top fixed;
+          background-size: 100%;
+        }
+        .element-3{
+          background: url(/img/fondos/boceto.jpg) repeat center top fixed;
+          background-size: 100%;
+        }
+  /*Suscribirse a Canal de noticias*/
+  .subscribe {
+    background: rgb(71, 16, 233);
+    color: white;
+  }
+/*MAIN*/
+.main{
+  /*padding-top: 12rem; /*solo para menu flotante*/
+}
+  .article-container {
+    padding-top: 1%;
+    display: flex;
+  }
+    .articulo {
+      border-radius: 10px;
+      padding:1%;
+      width: 40%;
+      margin: 1%;
+      background: lightblue;
+
+    }
+      .icons {
+        font-size: 10rem;
+      }
+      .lista-anidada{
+        margin-left: 20%;
+        text-align:start;
+        list-style:initial;
+        list-style-type: outside;
+        text-decoration: none;
+      }
+        .lista-anidada li, .lista-anidada li ul{
+          list-style: initial;
+          margin-left: 2rem;
+        }
+      .articulo table, .articulo table th, .articulo table td, .articulo table td{
+        border-collapse: collapse;
+        border: 2px solid grey;
+      }
+      .articulo table th{
+        background:lightyellow;
+      }
+
+.clearfix{
+  clear: both;
+}
+.footer{
+  background: #f2f2f2;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+  .footer p{
+    margin-bottom: 0;
+  }
+  .rss {
+    color: #ff9900;
+  }

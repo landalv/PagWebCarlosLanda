@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <!--canal -->
+  <channel>
+    <title>Noticias Lenguajes de Marcas - DAW</title>
+    <description> Encontraras noticias, sobre la asignatura de Lenguajes de Marcas.</description>
+    <link>https://www.w3schools.com/html/html_css.asp</link>
+    <language>es-ES</language>
+    <!-- noticias -->
+    <item>
+      <title>Hoja de estilos en cascada. CSS3</title>
+      <rating>Web</rating>
+      <pubDate>Sat, 18 Dic 2021 10:30:00 +0100</pubDate>
+      <textInput>Hojas de estilos en cascada. Documentación sobre el estándar CSS3</textInput>
+    </item>
+  </channel>
